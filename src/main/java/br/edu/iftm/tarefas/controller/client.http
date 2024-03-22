@@ -1,0 +1,39 @@
+# Requisições para o TodoListItemController
+
+### Obter todos os itens de uma lista de tarefas
+GET http://localhost:8080/tarefa/1/item
+
+### Obter um item específico de uma lista de tarefas
+GET http://localhost:8080/tarefa/1/item/1
+
+### Criar um novo item em uma lista de tarefas
+POST http://localhost:8080/tarefa/1/item
+Content-Type: application/json
+
+{
+	"nome": "Título do item"
+}
+
+### Excluir um item específico de uma lista de tarefas
+DELETE http://localhost:8080/tarefa/1/item/1
+
+
+# Requisições para o TodoListController
+
+### Obter todas as listas de tarefas
+GET http://localhost:8080/tarefa
+
+### Obter uma lista de tarefas específica
+GET http://localhost:8080/tarefa/1
+
+### Criar uma nova lista de tarefas
+POST http://localhost:8080/tarefa
+Content-Type: application/json
+
+{
+	"nome": "Título da lista de tarefas"
+}
+
+
+### Excluir uma lista de tarefas específica
+DELETE http://localhost:8080/tarefa/2
