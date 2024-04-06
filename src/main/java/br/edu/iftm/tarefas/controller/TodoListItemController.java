@@ -32,8 +32,8 @@ public class TodoListItemController {
 	}
 
 	@GetMapping("{id}")
-	public TodoListItem getById(@PathVariable("id") Long id) {
-		return service.getById(id);
+	public TodoListItem getById(@PathVariable("id") Long idItem, @PathVariable("tarefaId") Long idTarefa) {
+		return service.getById(idTarefa, idItem);
 	}
 
 	@PostMapping
